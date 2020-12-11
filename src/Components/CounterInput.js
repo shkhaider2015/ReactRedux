@@ -8,11 +8,15 @@ const CounterInput = () => {
     return(
         <>
         <button onClick={() => dispatch({
-            type : 'INCREMENT'
+            type : 'INCREMENT',
+            payload : 'Increment Start'
         }) } >+</button>
         <button onClick={() => dispatch({
-            type : 'DECREMENT'
+            type : 'DECREMENT',
+            payload : 'Decrement Start'
         }) } >-</button>
+
+
 
         </>
     )

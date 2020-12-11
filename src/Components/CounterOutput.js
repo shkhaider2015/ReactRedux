@@ -3,11 +3,14 @@ import { useSelector } from "react-redux";
 
 const CounterOutput = () => {
     
-    const counter = useSelector((state) => state.counter)
+    const obj = useSelector((state) => ({
+        counter : state.counter, 
+        title : state.title
+    }) )
     
     return(
         <div>
-            <h3> Counter Value : {counter} </h3>
+            <h3> Counter Value : {obj.counter} ------   {obj.title}  </h3>
         </div>
     )
 }
