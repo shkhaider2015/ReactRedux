@@ -1,6 +1,7 @@
 import React from 'react'
 import { CounterInput } from "./CounterInput";
 import { CounterOutput } from "./CounterOutput";
+import { TeamInput } from './TeamInput';
 
 const App = () => {
     return(
@@ -9,6 +10,7 @@ const App = () => {
             <CounterOutput />
             <br />
             <CounterInput />
+            <TeamInput />
         </div>
     )
 }

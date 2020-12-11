@@ -1,6 +1,7 @@
 const initializeState = {
     title : "not selected",
     counter  : 0,
+    team : 'ajax'
 }
 
 const CounterReducer = (state = initializeState, action) => 
@@ -19,6 +20,11 @@ const CounterReducer = (state = initializeState, action) =>
                 counter : state.counter - 1,
                 title : action.payload
             }
+            case 'teamName':
+                return{
+                    ...state,
+                    team : action.payload
+                }
         default:
             return state
     }
